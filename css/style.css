@@ -1,0 +1,9 @@
+main h1 {
+    color: rgb(213, 23, 124);
+}
+p{
+    font-weight: 600;
+}
+div#cards.row {
+    justify-content: space-evenly;
+}
