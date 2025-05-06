@@ -44,7 +44,7 @@ const cardsElem = document.getElementById("cards");
 
 const createMemberCard = (member) => {
  const { name, role, email, img } = member;
-return  `<div class="card mb-3 text-bg-dark" style="max-width: 540px;">
+return  `<div class="card mb-3 text-bg-dark px-0" style="max-width: 540px;">
 <div class="row g-0">
   <div class= "col-md-4">
     <img src= './${img}' class="img-fluid" alt='${name}'>
