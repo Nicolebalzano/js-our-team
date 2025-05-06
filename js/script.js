@@ -38,10 +38,44 @@ const teamMembers = [
 ];
 
 
-// creo le cards
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// prelevo il contenitore delle cards
 const cardsElem = document.getElementById("cards");
 
-
+// assegno alla card i valori relativi al singolo teamMember
 const createMemberCard = (member) => {
  const { name, role, email, img } = member;
 return  `<div class="card mb-3 text-bg-dark px-0" style="max-width: 540px;">
@@ -59,10 +93,11 @@ return  `<div class="card mb-3 text-bg-dark px-0" style="max-width: 540px;">
 </div>
 </div>`
 }
+// creo una funzione che mi permette tramite un ciclo for di iterare i valori di ogni singolo membro
+// per poi stampare le nuove card direttamente nella pagina HTML
 function newCard(arrayTeam){
   let cards = '';
   for (let member of arrayTeam){
-    console.log(member);
     cards += createMemberCard(member);
   }
   cardsElem.innerHTML = cards;
